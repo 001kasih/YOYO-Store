@@ -1,0 +1,72 @@
+/* Cart.css */
+
+.cart {
+  padding: 20px;
+}
+
+.cart h2 {
+  font-size: 1.5rem;
+  color: #1e90ff; /* Dodger Blue */
+}
+
+.cart ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cart li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background: transparent; /* Background transparan */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cart li img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.cart li div {
+  flex-grow: 1;
+}
+
+.cart li h3 {
+  font-size: 1.2rem;
+  margin: 0 0 10px;
+  color: #1e90ff; /* Dodger Blue */
+}
+
+.cart li p {
+  margin: 0 0 10px;
+  color: #555;
+}
+
+.cart li .button-group {
+  display: flex;
+  gap: 5px;
+}
+
+.cart li button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #1e90ff; /* Dodger Blue */
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.cart li button:hover {
+  background-color: #23d85f; /* Slightly darker blue */
+}
+
+.total {
+  margin-top: 20px;
+  text-align: right;
+  font-size: 1.2rem;
+}

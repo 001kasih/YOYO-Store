@@ -1,0 +1,77 @@
+/* ProductList.css */
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-item {
+  padding: 20px;
+  width: calc(33.33% - 20px); /* Lebar per item, dikurangi margin antar item */
+  margin-bottom: 20px; /* Jarak antar baris */
+  box-sizing: border-box; /* Pastikan padding tidak mempengaruhi lebar total */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.8); /* Background transparan */
+  backdrop-filter: blur(10px); /* Efek blur */
+  text-align: left;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.product-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-item .product-details {
+  padding: 10px;
+}
+
+.product-item h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #1e90ff;
+}
+
+.product-item p {
+  font-size: 0.9rem;
+  color: #555;
+  height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-item .price-add {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-item h4 {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.product-item button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #1e90ff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.product-item button:hover {
+  background-color: #1c86ee;
+}
+
+.product-item:hover {
+  background: rgba(255, 255, 255, 0.9); /* Lebih terang saat hover */
+  transform: scale(1.05);
+}
